@@ -75,7 +75,7 @@ public class UIButtonsManager implements View.OnClickListener
 
 
     //SA COME INTERPRETARE LE RICHIESTE/RISPOSTE
-    void onActivityResult(int requestCode,int resultCode, Intent data)
+    void onActivityProtocolSolver(int requestCode, int resultCode, Intent data)
     {
         //se corrisponde ad un protocollo noto
         if(requestCode == Protocol.REQ_ECHO)

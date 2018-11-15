@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements MessageManager
     protected void onActivityResult(int requestCode,int resultCode, Intent data)
      {
          //delego il listener a gestire l'evento result
-         ((UIButtonsManager)btnListener).onActivityResult(requestCode,resultCode,data);
+         ((UIButtonsManager)btnListener).onActivityProtocolSolver(requestCode,resultCode,data);
      }
 
 }

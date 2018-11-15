@@ -1,7 +1,6 @@
 package com.amsoftware.testapplication03;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +31,7 @@ public class MainActivity2 extends AppCompatActivity implements MessageManager {
 
         //notifico il gestore di eventi di verificare il messaggio arrivato
         //il lgestore sa come interpretare il messaggio
-        ((UIButtonsManager)btnListener).onActivityResult(Protocol.REQ_ECHO,Protocol.REQ_ECHO,getIntent());
+        ((UIButtonsManager)btnListener).onActivityProtocolSolver(Protocol.REQ_ECHO,Protocol.REQ_ECHO,getIntent());
     }
 
     @Override
