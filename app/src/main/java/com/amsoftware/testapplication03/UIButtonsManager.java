@@ -8,7 +8,7 @@ import android.view.View;
 public class UIButtonsManager implements View.OnClickListener
 {
     //LAVORO PER COMPOSIZIONE
-    //L'interfaccia MessageCreator ha dei contentuti
+    //L'interfaccia MessageManager ha dei contentuti
     MessageManager messaggiatore;
 
     //decido, per disaccoppiare, di esporre solo l'interfaccia manager
@@ -68,9 +68,13 @@ public class UIButtonsManager implements View.OnClickListener
         intent.putExtra(Protocol.RES_ECHO_STR, messaggiatore.sendMessage());
         //non lancio altre activty come detto prima
         //ma salvo i paramteri di intent come risultato valido di una richiesta
-        messaggiatore.getActivity().setResult(Activity.RESULT_OK,intent);
+        messaggiatore.
+                getActivity().
+                setResult(Activity.RESULT_OK,intent);
         //non mi serve piu l'activity, devo chiuderla, il codice di ritorno è il risultato salvato.
-        messaggiatore.getActivity().finish();
+        messaggiatore.
+                getActivity().
+                finish();
     }
 
 
